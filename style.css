@@ -10,12 +10,13 @@ h2 {
 }
 
 p {
-  padding: 1% 1% 1% 1%;
-  border: 2px dotted brown;
+  padding: 10% 1% 10% 1%;
+  border-top: 2px dashed brown;
   color: tomato;
   border-radius: 5px;
   line-height: 30px;
   font-size: 20px;
+  background-color: hsla(0, 100%, 90%, 0.2);
 }
 
 .note {
@@ -25,5 +26,9 @@ p {
 }
 
 .aside {
-  opacity: 50%;
+  opacity: 60%;
 }
+
+.images {
+  float:right;
+  padding: 1% 1% 1% 1%;
