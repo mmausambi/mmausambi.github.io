@@ -10,6 +10,7 @@ h2 {
 }
 
 p {
+  float: none;
   padding: 10% 1% 10% 1%;
   border-top: 2px dashed brown;
   color: tomato;
@@ -19,7 +20,7 @@ p {
   background-color: hsla(0, 100%, 90%, 0.2);
 }
 
-.note {
+.full {
   padding: 10% 10% 10% 10%;
   background: orange;
   font-family: "Lucida Console", "Courier New", monospace;
