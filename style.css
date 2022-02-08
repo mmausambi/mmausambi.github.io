@@ -1,9 +1,29 @@
 h1 {
-  color: orange;
-  
+  color: tomato;
+  line-height: 10px;
 }
 
-div {
-  padding: 50% 50% 75px 100px;
-  background: rgba(0, 128, 0, 0.3);
+h2 {
+   color: white;
+   font-size: 15px;
+   line-height: 1px;
+}
+
+p {
+  padding: 1% 1% 1% 1%;
+  border: 2px dotted brown;
+  color: tomato;
+  border-radius: 5px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.note {
+  padding: 10% 10% 10% 10%;
+  background: orange;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.aside {
+  opacity: 50%;
 }
