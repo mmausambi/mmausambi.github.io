@@ -16,6 +16,7 @@ p {
   color: tomato;
   border-radius: 5px;
   line-height: 30px;
+  font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   background-color: hsla(0, 100%, 90%, 0.2);
 }
