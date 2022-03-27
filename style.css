@@ -1,36 +1,516 @@
-h1 {
-  color: tomato;
-  line-height: 10px;
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: normal;
+    list-style: none;
 }
 
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+   .cf:before, .cf:after { content: ""; display: table; }
+   .cf:after { clear: both; }
+   .cf { zoom: 1; }
+  .clear { clear: both; }
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+/*GENERAL*/
+.container, h1, h2, p, ul, li {
+	background-color: hsla(359, 100%, 50%, 0.00);
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 24px;
+}
+
+.background {
+	  background: linear-gradient(to right, hsla(49, 67%, 79%,1) 0%, hsla(100,100%,100%,0) 100%);
+
+	width:100%;	
+	
+
+
+	position: absolute;
+	z-index: -1;
+}
+
+.container {
+	
+	 
+	
+	width: 90%;
+    max-width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+    margin-bottom: 100px;
+/*	padding: 50px auto 100px auto;*/
+    position: relative;
+}
+
+
+/*TOP*/
+.top {
+
+    position: absolute; 
+    width: 100%;
+}
+.cookserve {
+	width: 12.66%;
+	margin-left: 2%;
+    margin-right: 2%;
+}
+.cook {
+	
+    margin: 0px 0% 24px 0%;
+}
+
+.cookserve p {
+	font-weight: 400;
+	font-size: 21px;
+	letter-spacing: 0.5px;
+	line-height: 29px;
+}
+
+.MalaiKulfi{
+	margin: 54px 2% 54px 2%;
+	width: 29.333%;
+	font-variant-ligatures: none;
+	font-weight: 300;
+	font-size: 82px;
+	letter-spacing: 1px;
+	line-height: 100px;
+/*    border-top: 8px solid black;
+    border-bottom: 8px solid black;*/
+	padding: 0.35% 0 0.15% 0.75%;
+   /* padding: 30px 0px 30px 0px;*/
+	
+	/*background-color: black;*/
+	
+	
+}
+
+.Malai {
+	color: #ede0a6;
+	background: black;
+	position: relative;
+}
+
+
+
+.Kulfi {
+	margin-left: 0px;
+	position: relative;
+}
+
+/*.box {
+	postion: absolute;
+	background: black;
+	height: 30px;
+	width: 13px;
+	z-index: -1;
+}*/
+
+.note {
+	margin: 0 2% 0 2%;
+	width: 12.66%;
+	margin-top: 50px;	
+}
+.note p {
+	font-weight: 400;
+	font-size: 21px;
+	letter-spacing: 0.5px;
+	line-height: 29px;
+    /*margin-bottom: 40px;*/
+}
+
+/*MAIN*/
+.main {
+    clear: both;  
+}
+
+ h2 {
+	margin: 0 0% 40px 0%;
+	/*width: 47.99%;*/
+	 padding:0.25% 0% 0.25% 2%;
+	 width: 35.333%;
+	 display: inline-block;
+	font-weight: 900;
+	font-size: 32px;
+   /* text-align: right;*/
+    float: right;
+	
+	  /*background: linear-gradient(to top, 
+	 hsla(50,60%,50%,1) 0%, hsla(20,100%,50%,0) 100%);*/
+	 
+	background-color: black;
+	/*color: white;*/
+	 
+	 /*makes the text transparent*/
+	 color: rgba(0, 0, 0, 0);
+	 
+}
+
+/*.block {
+	margin: 0% 0% 40px 0%;
+	padding: 1% 0 2.6% 0%;
+	width: 35.33%;
+	height: 32px;
+	display: block;
+	float: right;
+   background-color: black;
+}*/
+
+ h3 {
+	margin: 0 0% 40px 0%;
+	/*width: 47.99%;*/
+	 width: 17.5%;
+	 padding:0.35% 0 0.15% 0.75%;
+	 display: inline-block;
+	font-weight: 300;
+	font-size: 32px;
+ 	text-align: right;
+    float: right;
+	
+	/*  background: linear-gradient(to top, hsla(50,60%,50%,1) 0%, hsla(20,100%,50%,0) 100%);*/
+	background-color: black;
+	color: #f7f5db;
+	 
+	 
+}
+
+/*.ingredients h2{ 
+    width: 50%;
+}*/
+
+/*.header-line {
+	margin: 13.5px 2% 0px 2%;
+    width: 29.333%;
+    display: block;
+    border-top: 8px solid white;
+    float: left;
+	
+}
+*/
+/*ingredients*/
+
+.firstColIng {
+	margin: 0 2% 0 35.333%;
+	width: 29.333%;
+	text-align: right;
+	padding: 1% 0 0 0;
+	
+	  background: linear-gradient(to left, hsla(49, 67%, 79%,1) 0%, hsla(100,100%,100%,0) 100%);
+	
+}
+.secColIng {
+	margin: 0 2% 0 68.667%;
+	width: 29.333%;	
+	padding: 1% 0 0 0;
+	
+	background: linear-gradient(to right, hsla(49, 67%, 79%,1) 0%, hsla(100,100%,100%,0) 100%);
+}
+.ingredients li {
+	font-weight: 400;
+	font-size: 21px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    margin-top: -5px;
+	
+}
+.ingredients li span {
+    font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 1px;
+	
+	margin-top: 1px;
+    display: block;
+}
+.clear {
+    clear: both;
+}
+
+
+/*directions*/
+
+.directions {
+	margin-top: 100px;
+    clear: both;
+}
+.directions p {
+	
+    margin-bottom: 40px;
+    text-align: right;
+	
+}
+
+
+.text {
+	margin: 0px 0% 10px 0%;
+    width: 29.333%;
+	
+	font-weight: 400;
+	font-size: 21px;
+    display: block;
+    float: left;
+	
+	border-bottom: 1px solid black;
+	padding: 1% 2% 20px 0;
+	
+	 background: linear-gradient(to left, hsla(49, 67%, 79%,1) 0%, hsla(100,100%,100%,0) 100%);
+}
+.step {
+	margin: 0px 0% 0px 0%;
+	width: 12.666%;
+	
+	font-weight: 300;
+    font-size: 32px;
+	padding:0.35% 0 0.15% 0.6%;
+	/*letter-spacing: 2px;*/
+    display: block;
+    float: left;
+    text-align: left;
+	
+	background-color: black;
+	color: #f7f5db;
+}
+.odd {
+    margin-left: 37.333%;
+	
+}
+.even {
+    margin-left: 54%;
+}
+
+
+/* MEDIA QUERIES TRANSITION TO TABLETS */
+@media (max-width: 1210px ) {
+
+.cookserve p {
+	font-size: 18px;
+	line-height: 24px;
+	
+}
+.note p {
+	font-size: 18px;
+	line-height: 24px;
+}	
+.ingredients li {
+	font-size: 18px;
+}	
+.ingredients li span {
+	font-size: 16px;
+}
+.step {
+	font-size: 28px;
+	}
+.odd {
+	font-size: 18px;
+}
+.even {
+	font-size: 18px;
+}
+
+
+}
+
+/* MEDIA QUERIES TABLETS */
+
+@media (max-width: 1040px ) {
+
+.top {
+    position: static; 
+}
+.cookserve {
+	width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.cookserve p {
+	font-size: 18px;
+	line-height: 19px;
+}
+.cook {
+    float: left;
+    width: 29.333%;
+    margin: 0px 2% 0px 2%;
+}
+.serve {
+    float: left;
+    width: 29.333%;
+    margin: 0px 2% 0px 2%;
+}
+.MalaiKulfi{
+	width: 62.666%;
+}
+.note {
+	width: 100%;
+	
+	margin-left: 0%;
+	margin-top: 20px;	
+}
+.note p {
+	font-size: 18px;
+	
+    width: 29.333%;
+    margin: 0px 2% 30px 2%;
+    float: left;
+}
+.note p:first-child { 
+    margin-left: 35.333%;
+}
+.main {
+    margin-top: 70px;
+}
+	
+/*.header-line {
+	margin: 10px 2% 0px 2%;
+	width: 46%;
+}*/
+	
 h2 {
-   color: white;
-   font-size: 15px;
-   line-height: 1px;
+	margin: 0 2% 30px 0%;
+	width: 50%;
+	
+	font-size: 24px;
+    
+}
+	
+h3 {
+	margin: 0 0% 30px 2%;
+	width: 17.5%;
+	
+	font-size: 24px;
+    
+}
+.firstColIng {
+
+	float: right;
+	margin: 0 51.999% 0 0;
+	/*margin-left: 2%;*/
+	width: 46%;
+}
+.secColIng {
+
+	float: right;
+	margin: 0 2% 10px 0;
+	/*margin-left: 35.333%;*/
+	width: 46%;	
+}
+	
+.ingredients li {
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+	
+	padding-bottom: 15px;
+}	
+.ingredients li span {
+	font-size: 16px;
+	line-height: 18px;
+}
+.directions p {
+    margin-bottom: 24px;
+}	
+.text {
+    width: 46%;
+    margin: 0px 0% 0px 0%;
+    display: block;
+    float: left;
+	
+	padding-bottom: 15px;	
+}
+.step {
+    width: 12.666%;
+    margin: 0px 0% 0px 0%;
+	
+    font-size: 24px;
+    display: block;
+    float: left;
+}
+.odd {
+	font-size: 18px;
+	letter-spacing: 0.5px;
+    margin-left: 2%;
+}
+.even {
+	font-size: 18px;
+	letter-spacing: 0.5px;
+    margin-left: 35.333%;
 }
 
-p {
-  float: none;
-  padding: 10% 1% 10% 1%;
-  border-top: 2px dashed brown;
-  color: tomato;
-  border-radius: 5px;
-  line-height: 30px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  background-color: hsla(0, 100%, 90%, 0.2);
+
 }
 
-.full {
-  padding: 10% 10% 10% 10%;
-  background: orange;
-  font-family: "Lucida Console", "Courier New", monospace;
+
+/* MEDIA QUERIES SMARTPHONES */
+
+@media (max-width: 750px ) {
+
+
+.MalaiKulfi{
+	width: 96%;
+    font-size: 70px;
+    line-height: 65px;
+}
+/*h2 {
+	font-size: 18px;
+}*/
+.ingredients li {
+	font-size: 16px;
+	line-height: 18px;
+	
+	padding-bottom: 10px;
+}
+.ingredients li span {
+	font-size: 14px;
+	line-height: 16px;
+}
+/*.firstColIng {
+	margin-left: 2%;
+	width: 46%;
+}
+.secColIng {
+	margin-left: 52%;
+	width: 46%;	
+}*/
+.text {
+	font-size: 16px;
+	
+	/*float: left;
+    width: 62.666%;
+    margin: 0px 2% 0px 2%;*/
+	}
+.step {
+/*	float: left;
+    width: 29.333%;
+    margin: 0px 2% 0px 2%;*/
+    font-size: 18px;
 }
 
-.aside {
-  opacity: 60%;
-}
+	
+	
 
-.images {
-  float:right;
-  padding: 1% 1% 1% 1%;
+/*.odd {
+    margin-left: 2%;
+}
+.even {
+    margin-left: 2%;
+}*/
+
+}
